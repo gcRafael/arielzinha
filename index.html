@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Arielzinha | Nosso pequeno oceano de amor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Pacifico&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a href="#inicio">🐚 Início</a>
+      <a href="#presenca">Confirme sua presença</a>
+      <a href="#curiosidades">Curiosidades</a>
+      <a href="#memorias">Memórias</a>
+    </nav>
+
+    <div class="hero-content">
+      <img class="hero-photo" src="images/memoria-00.jpg" alt="Foto da Arielzinha">
+      <div class="hero-copy">
+        <span class="crown">♕</span>
+        <h1>Arielzinha</h1>
+        <h2>Nosso pequeno oceano de amor <b>♥</b></h2>
+        <p>Sejam bem-vindos ao cantinho da Ariel! Aqui você pode confirmar sua presença na festa, conhecer algumas curiosidades e ver momentos especiais que guardamos no coração.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="rsvp-section" id="presenca">
+      <form id="rsvpForm" class="rsvp-card" novalidate>
+        <div class="shell"><img src="images/form-shell.png" alt="Concha"></div>
+        <h2>❧ Confirme sua presença ❧</h2>
+        <p>Sua presença tornará esse dia ainda mais especial! 💕</p>
+
+        <div class="form-grid">
+          <label>Nome completo
+            <input name="nome" required placeholder="Digite seu nome">
+          </label>
+          <label>Quantidade de adultos
+            <input name="adultos" type="number" min="0" value="1" required>
+          </label>
+          <label>Quantidade de crianças
+            <input name="criancas" type="number" min="0" value="0" required>
+          </label>
+          <label>WhatsApp
+            <input id="whatsapp" name="whatsapp" required inputmode="numeric" placeholder="(00) 00000-0000">
+          </label>
+          <label class="span-2">Confirma minha presença?
+            <select name="presenca" required>
+              <option value="">Selecione uma opção</option>
+              <option value="sim">Sim, estaremos lá! 💖</option>
+              <option value="nao">Infelizmente não poderei ir</option>
+            </select>
+          </label>
+          <label class="span-3">Mensagem (opcional)
+            <textarea name="mensagem" placeholder="Deixe um recadinho para a Arielzinha! 💕"></textarea>
+          </label>
+        </div>
+
+        <button type="submit">🐚 &nbsp; Confirmar Presença</button>
+        <output id="status" aria-live="polite"></output>
+      </form>
+    </section>
+
+    <div class="lower-module">
+    <section class="facts" id="curiosidades">
+      <div class="section-inner">
+        <h2>⭐ 5 Curiosidades sobre a Ariel ⭐</h2>
+        <div class="fact-list">
+          <article><i><img src="images/icon-star.png" alt=""></i><h3>Timida como<br>o papai</h3><p>Precisa de um tempo para se acostumar</p></article>
+          <article><i><img src="images/icon-shell.png" alt=""></i><h3>Ama ler<br>Livros</h3><p>Seja de historias ou interativos</p></article>
+          <article><i><img src="images/icon-heart.png" alt=""></i><h3>Mundo<br>colorido</h3><p>Suas cor favorita é Rosa</p></article>
+          <article><i><img src="images/icon-music.png" alt=""></i><h3>Ama música</h3><p>Canções de baixo estimulo e instrumentos musicais</p></article>
+          <article><i><img src="images/icon-crown.png" alt=""></i><h3>Amiga dos<br>Animais</h3><p>Gosta muito de ver gatinhos e cachorrinhos</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="memories" id="memorias">
+      <div class="memory-panel">
+        <h2>Memórias da nossa sereia <b>♥</b></h2>
+        <p class="memory-subtitle">Alguns dos nossos momentos favoritos</p>
+        <div class="gallery">
+          <figure><img src="images/memoria-01.jpg" alt="Primeira Copa do mundo"><figcaption>Primeira Copa do mundo <span>♥</span></figcaption></figure>
+          <figure><img src="images/memoria-02.jpg" alt="Home office com a mamãe"><figcaption>Home office com a mamãe <span>♥</span></figcaption></figure>
+          <figure><img src="images/memoria-03.jpg" alt="Hora da leitura"><figcaption>Hora da leitura <span>♥</span></figcaption></figure>
+          <figure><img src="images/memoria-04.jpg" alt="Conhecendo as flores"><figcaption>Conhecendo as flores <span>♥</span></figcaption></figure>
+          <figure><img src="images/memoria-05.jpg" alt="Coleguinhas"><figcaption>Coleguinhas <span>♥</span></figcaption></figure>
+        </div>
+      </div>
+    </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>Obrigado por fazer parte da vida da nossa Arielzinha! 💕</p>
+    <div>
+      <a href="#" aria-label="Instagram">◎</a>
+      <a href="#" aria-label="WhatsApp">◉</a>
+      <a href="#" aria-label="Contato">♡</a>
+    </div>
+    <small>Feito com amor para Arielzinha ♕</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
